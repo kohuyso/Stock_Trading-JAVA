@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nitc.NewStock.DauTuController">
+   <children>
+      <VBox prefHeight="625.0" prefWidth="251.0" style="-fx-background-color: #F64668;">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="XING" layoutX="73.0" layoutY="112.0" size="36" text="" />
+                  <Text fill="WHITE" layoutX="102.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Analysis">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <JFXButton id=" #3f2863" fx:id="Home" alignment="BASELINE_LEFT" onAction="#HomeClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #F64668;" styleClass="#3f2863" text="Lọc chứng khoán" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <graphic>
+                  <FontAwesomeIconView fill="#fbf9f9" glyphName="ARCHIVE" size="15" wrappingWidth="13.300000190734863" />
+               </graphic>
+            </JFXButton>
+            <JFXButton id=" #3f2863" fx:id="Update" alignment="BASELINE_LEFT" onAction="#UpdateClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #F64668;" styleClass="#3f2863" text="Update data" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="DOWN" size="15" text="" />
+               </graphic>
+            </JFXButton>
+            <JFXButton id=" #3f2863" fx:id="DauTu" alignment="BASELINE_LEFT" onAction="#DauTuClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #F64668;" styleClass="#3f2863" text="Đầu tư ảo" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="MONEY" size="15.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton id=" #3f2863" fx:id="About" alignment="BASELINE_LEFT" onAction="#AboutClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #F64668;" styleClass="#3f2863" text="About" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="GROUP" size="15.0" />
+               </graphic>
+            </JFXButton>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Text fx:id="Time" fill="WHITE" layoutX="24.0" layoutY="154.0" onDragDetected="#Time7" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" textAlignment="CENTER" wrappingWidth="212.94140625">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane layoutX="247.0" layoutY="71.0" prefHeight="90.0" prefWidth="677.0" style="-fx-background-color: #F64668;">
+         <children>
+            <Label layoutX="335.0" layoutY="30.0" text="Tài sản" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="ARCHIVE" layoutX="280.0" layoutY="59.0" size="27" text="">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </FontAwesomeIconView>
+         </children>
+      </Pane>
+      <GridPane layoutX="251.0" layoutY="262.0" prefHeight="350.0" prefWidth="651.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="652.0" minWidth="10.0" prefWidth="652.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.66668701171875" minWidth="0.0" prefWidth="0.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="191.66665649414062" minHeight="10.0" prefHeight="10.333338419596352" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="364.00001525878906" minHeight="10.0" prefHeight="362.999994913737" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TableView fx:id="NoteTable" prefHeight="341.0" prefWidth="108.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <AnchorPane prefHeight="225.0" prefWidth="346.0" GridPane.rowIndex="1">
+               <children>
+                  <PieChart fx:id="pieChart" layoutX="40.0" layoutY="16.0" prefHeight="280.0" prefWidth="588.0" />
+                  <TextField alignment="CENTER" layoutX="1.0" layoutY="-21.0" prefHeight="27.0" prefWidth="652.0" text="Tài sản" />
+                  <Button fx:id="CPsuhuuB" layoutX="277.0" layoutY="309.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#CPsuhuuC" prefHeight="17.0" prefWidth="85.0" style="-fx-background-color: #F64668;" text="Chi tiết" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="DISAPPEAR" />
+                     </cursor>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font size="7.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <Button fx:id="SearchB" layoutX="839.0" layoutY="196.0" mnemonicParsing="false" onAction="#SearchC" prefHeight="27.0" prefWidth="67.0" style="-fx-background-color: #F64668;" text="Search" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fx:id="searchButton" fill="WHITE" glyphName="SEARCH" onDragDetected="#SearchClick" />
+         </graphic>
+      </Button>
+      <TextField fx:id="textSearch" layoutX="639.0" layoutY="197.0" onAction="#TypeSearch" prefHeight="25.0" prefWidth="200.0" />
+      <Line endX="131.0" endY="0.66668701171875" layoutX="486.0" layoutY="613.0" startX="-214.99996948242188" startY="0.66668701171875" />
+      <Line endX="204.0" endY="-0.33331298828125" layoutX="719.0" layoutY="614.0" startX="-100.0" />
+   </children>
+</AnchorPane>

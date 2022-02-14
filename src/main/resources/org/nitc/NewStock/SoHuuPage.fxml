@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nitc.NewStock.SoHuuController">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="859.0" prefWidth="921.0">
+         <children>
+            <VBox prefHeight="873.0" prefWidth="251.0" style="-fx-background-color: #F64668;">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="XING" layoutX="73.0" layoutY="112.0" size="36" text="" />
+                        <Text fill="WHITE" layoutX="102.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Analysis">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <JFXButton id=" #3f2863" fx:id="Home" alignment="BASELINE_LEFT" onAction="#HomeClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #F64668;" styleClass="#3f2863" text="Lọc chứng khoán" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#fbf9f9" glyphName="ARCHIVE" size="15" wrappingWidth="13.300000190734863" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton id=" #3f2863" fx:id="Update" alignment="BASELINE_LEFT" onAction="#UpdateClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #F64668;" styleClass="#3f2863" text="Update data" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="DOWN" size="15" text="" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton id=" #3f2863" fx:id="DauTu" alignment="BASELINE_LEFT" onAction="#DauTuClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #F64668;" styleClass="#3f2863" text="Đầu tư ảo" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="MONEY" size="15.0" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton id=" #3f2863" fx:id="About" alignment="BASELINE_LEFT" onAction="#AboutClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #F64668;" styleClass="#3f2863" text="About" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="GROUP" size="15.0" />
+                     </graphic>
+                  </JFXButton>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="Time" fill="WHITE" layoutX="24.0" layoutY="154.0" onDragDetected="#Time7" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" textAlignment="CENTER" wrappingWidth="212.94140625">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <Pane layoutX="247.0" layoutY="71.0" prefHeight="79.0" prefWidth="677.0" style="-fx-background-color: #F64668;">
+               <children>
+                  <Label layoutX="335.0" layoutY="22.0" text="Tài sản" textFill="WHITE">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARCHIVE" layoutX="280.0" layoutY="51.0" size="27" text="">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                  </FontAwesomeIconView>
+               </children>
+            </Pane>
+            <GridPane layoutX="260.0" layoutY="276.0" prefHeight="329.0" prefWidth="651.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="642.6666666666666" minWidth="10.0" prefWidth="642.6666666666666" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="191.66665649414062" minHeight="10.0" prefHeight="10.333338419596352" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="364.00001525878906" minHeight="10.0" prefHeight="362.999994913737" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TableView fx:id="NoteTable" prefHeight="341.0" prefWidth="360.0" GridPane.rowIndex="1">
+                     <columns>
+                        <TableColumn fx:id="Ma" prefWidth="105.99996948242188" text="Mã" />
+                        <TableColumn fx:id="SoLuong" prefWidth="128.0" text="Số lượng" />
+                        <TableColumn fx:id="Von" prefWidth="128.0" text="Vốn" />
+                        <TableColumn fx:id="ThiGia" prefWidth="140.0" text="Thị giá" />
+                        <TableColumn fx:id="Lai" prefWidth="140.0" text="Lãi/Lỗ" />
+                     </columns>
+                  </TableView>
+               </children>
+            </GridPane>
+            <Button fx:id="SearchB" layoutX="837.0" layoutY="180.0" mnemonicParsing="false" onAction="#SearchC" prefHeight="27.0" prefWidth="67.0" style="-fx-background-color: #F64668;" text="Search" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fx:id="searchButton" fill="WHITE" glyphName="SEARCH" onDragDetected="#SearchClick" />
+               </graphic>
+            </Button>
+            <TextField fx:id="textSearch" layoutX="637.0" layoutY="181.0" onAction="#TypeSearch" prefHeight="25.0" prefWidth="200.0" />
+            <Line endX="131.0" endY="0.66668701171875" layoutX="486.0" layoutY="613.0" startX="-234.66665649414062" startY="0.66668701171875" />
+            <Line endX="204.0" endY="-0.33331298828125" layoutX="719.0" layoutY="614.0" startX="-100.0" />
+            <Text fx:id="TienMat" layoutX="312.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="176.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="Tong" layoutX="737.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="142.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="TienCP" layoutX="527.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="142.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="251.0" layoutY="624.0" prefHeight="217.0" prefWidth="666.0">
+               <children>
+                  <TextField fx:id="MuaMa" layoutX="165.0" layoutY="44.0" prefHeight="37.0" prefWidth="82.0" />
+                  <TextField fx:id="MuaKL" layoutX="287.0" layoutY="44.0" prefHeight="37.0" prefWidth="82.0" />
+                  <TextField fx:id="BanMa" layoutX="165.0" layoutY="111.0" prefHeight="37.0" prefWidth="82.0" />
+                  <TextField fx:id="BanKL" layoutX="287.0" layoutY="111.0" prefHeight="37.0" prefWidth="82.0" />
+                  <JFXButton fx:id="MuaB" blendMode="RED" layoutX="400.0" layoutY="50.0" onAction="#MuaC" text="Mua" />
+                  <JFXButton fx:id="BanB" blendMode="GREEN" layoutX="400.0" layoutY="117.0" onAction="#BanC" text="Bán " />
+                  <Text layoutX="195.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã" />
+                  <Text layoutX="299.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Khối lượng" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

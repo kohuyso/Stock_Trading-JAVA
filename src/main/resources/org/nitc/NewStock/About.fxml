@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nitc.NewStock.AboutController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="921.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Text layoutX="12.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&#10;&#9;AAA: Là một mini project sau khi hoàn thành khóa JAVA-OOP của NITC. Dự án làm về lĩnh vực chứng khoán bằng crawl data từ những trang web nổi tiếng uy tín về chứng khoán tại Việt Nam: Cafef, VietStock. Đây là một kho dữ liệu lớn nhưng về mặt kĩ thuật và data không được đồng bộ nên sau khi crawl và sử lý vẫn sẽ có nhiều vấn đề về mặt dữ liệu (chủ yếu là do năng lực của người làm).&#10;&#9;&#10;&#9;Về cơ bản ta sẽ dung những thông số cơ bản của chứng khoán để lọc và đánh giá một cổ phiếu nhưng chỉ nên dừng lại ở yếu tố tham khảo. Vì thị trường ở từng quốc gia, hay thậm chí từng thời kì vĩ mô là hoàn toàn khác nhau nên không có một công thức chung nào để có thể đầu tư chắc chắn ngoài việc tìm hiểu rõ về nội tại, tiềm năng thị trường cũng như doanh nghiệp đầu tư.&#10;&#9;&#10;&#9;Thị trường chứng khoán Việt Nam hiện nay đã trải qua một giai đoạn tăng trưởng với nhiều kỉ lục được phá vỡ nhưng vẫn còn được nhận định là một thị trường hấp dẫn với tiềm năng tang trưởng mạnh trong tương lai. Tuy nhiên lượng tiền chủ yếu đến từ nhà đầu tư cá nhân rất dễ hoảng loạn nên rất dễ xảy ra tình trạng đầu cơ tăng nóng khi bong bóng phát nổ sẽ ảnh hưởng đến những mã cổ phiếu tốt có tiềm năng tăng trưởng. Một điều nữa là PGS. TS Nguyễn Văn Công dạy vĩ mô 1 của em nói rằng “Đầu tư chứng khoán là đầu tư cho tương lai dựa trên nhiều yếu tố một trong số đó là yếu tố vĩ mô”. Điển hình hiện tại là lạm phát do chính phủ bơm hang trăm nghìn tỷ ra thi trường. Với dòng tiền re, lãi suất thấp, dòng tiền này sẽ được chuyển vào các kênh đầu tư vàng, bất động sản và chứng khoán.&#10;&#9;&#10;&#9;Sau thi hoàn thành project này ngoài mang lại lợi ích rất lớn về mặt tư duy lập trình thì cũng nó cũng mang lại sự hiểu biết về thị trường tài chính, những yếu tố vi mô, địa chính trị có thể ảnh hưởng đến thị trường và những thế lực thao túng đầu cơ dẫn dắt ròng tiền trong đầu tư . (Ra đường còn khoe cháu học CS ở NEU  =)) ).&#10;&#9;&#10;&#9;Một vài nguồn tham khảo cho nhà đầu tư f0 để có một cái nhìn tổng quát về thì trường chứng khoán đầu tư cơ bản Spiderum, và kênh Alias chứng khoán, và một số video như:&#10;&#9;&#9;-https://www.youtube.com/watch?v=onoqCZMvP5s&amp;t=74s&#10;&#9;&#9;-https://www.youtube.com/watch?v=yMir1kwM1Eg&amp;t=338s&#10;&#9;&#9;-https://www.youtube.com/watch?v=9VYdFO14u1E&amp;t=93s&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;( Lưu ý: mọi thứ đề mang tính chất tham khảo)&#10;&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;Khổng Vũ Huy – NITC Gen 1&#10;&#10;&#10;&#10;" wrappingWidth="887.9815063476562">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="HomeB" layoutX="319.0" layoutY="693.0" onAction="#HomeClick" prefHeight="25.0" prefWidth="317.0" style="-fx-background-color: #3f2863;" text="HOME" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView fx:id="iconNe" fill="WHITE" glyphName="HOME" layoutX="434.0" layoutY="714.0" size="15.0" />
+            <ImageView fitHeight="86.0" fitWidth="589.0" layoutX="194.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/Screenshot%202022-02-14%20203329.png" />
+               </image>
+            </ImageView>
+            <FontAwesomeIconView fill="#3f2863" glyphName="XING" layoutX="139.0" layoutY="103.0" size="69" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

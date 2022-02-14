@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nitc.NewStock.BangNganhController">
+   <children>
+      <VBox prefHeight="625.0" prefWidth="273.0" style="-fx-background-color: #3f2863;">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="XING" layoutX="73.0" layoutY="112.0" size="36" />
+                  <Text fill="WHITE" layoutX="102.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Analysis">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <JFXButton id=" #3f2863" fx:id="Home" alignment="BASELINE_LEFT" onAction="#HomeClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Lọc chứng khoán" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <graphic>
+                  <FontAwesomeIconView fill="#fbf9f9" glyphName="ARCHIVE" size="15" wrappingWidth="13.300000190734863" />
+               </graphic>
+            </JFXButton>
+            <JFXButton id=" #3f2863" fx:id="Update" alignment="BASELINE_LEFT" onAction="#UpdateClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Update data" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="DOWN" size="15" text="" />
+               </graphic>
+            </JFXButton>
+            <JFXButton id=" #3f2863" fx:id="DauTu" alignment="BASELINE_LEFT" onAction="#DauTuClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Đầu tư ảo" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="MONEY" size="15.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton id=" #3f2863" fx:id="About" alignment="BASELINE_LEFT" onAction="#AboutClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="About" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="GROUP" size="15.0" />
+               </graphic>
+            </JFXButton>
+            <Pane prefHeight="231.0" prefWidth="273.0">
+               <children>
+                  <Text fx:id="Time" fill="WHITE" layoutX="30.0" layoutY="227.0" onDragDetected="#Time7" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" textAlignment="CENTER" wrappingWidth="212.94140625">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane layoutX="273.0" layoutY="31.0" prefHeight="92.0" prefWidth="651.0" style="-fx-background-color: #3f2863;">
+         <children>
+            <Label layoutX="260.0" layoutY="29.0" text="Lọc theo nhóm ngành" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="ARCHIVE" layoutX="211.0" layoutY="59.0" size="27" text="">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </FontAwesomeIconView>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="273.0" layoutY="140.0" prefHeight="471.0" prefWidth="651.0">
+         <children>
+            <Button fx:id="BanBuonB" alignment="TOP_CENTER" layoutY="1.0" mnemonicParsing="false" onAction="#BanBuonC" prefHeight="85.0" prefWidth="90.0" text="Bán buôn" textFill="WHITE" />
+            <Button fx:id="BanLeB" alignment="TOP_CENTER" layoutY="97.0" mnemonicParsing="false" onAction="#BanLeC" prefHeight="85.0" prefWidth="90.0" text="Bán lẻ" textFill="WHITE" />
+            <Button fx:id="BaoHiemB" alignment="TOP_CENTER" layoutX="133.0" layoutY="1.0" mnemonicParsing="false" onAction="#BaoHiemC" prefHeight="85.0" prefWidth="90.0" text="Bảo hiểm" textFill="WHITE" />
+            <Button fx:id="BatDongSanB" alignment="TOP_CENTER" layoutX="270.0" layoutY="1.0" mnemonicParsing="false" onAction="#BatDongSanC" prefHeight="85.0" prefWidth="90.0" text="Bất động sản" textFill="WHITE" />
+            <Button fx:id="ChungKhoanB" alignment="TOP_LEFT" layoutX="406.0" layoutY="1.0" mnemonicParsing="false" onAction="#ChungKhoanC" prefHeight="85.0" prefWidth="90.0" text="Chứng khoán" textFill="WHITE" />
+            <Button fx:id="CNTTb" alignment="TOP_CENTER" layoutX="540.0" layoutY="1.0" mnemonicParsing="false" onAction="#CNTTc" prefHeight="85.0" prefWidth="90.0" text="Công nghệ&#10;và thông tin" textFill="WHITE" />
+            <Button fx:id="DuLichB" alignment="TOP_CENTER" layoutY="385.0" mnemonicParsing="false" onAction="#DuLichC" prefHeight="85.0" prefWidth="90.0" text="Lưu trú&#10;ăn uống" textFill="WHITE" />
+            <Button fx:id="ThuySanB" alignment="TOP_CENTER" layoutY="288.0" mnemonicParsing="false" onAction="#ThuySanC" prefHeight="85.0" prefWidth="90.0" text="Chế biến&#10;thủy sản" textFill="WHITE" />
+            <Button fx:id="MayMocB" alignment="TOP_CENTER" layoutY="193.0" mnemonicParsing="false" onAction="#MayMocC" prefHeight="85.0" prefWidth="90.0" text="SX thiết bị&#10; máy móc" textFill="WHITE" />
+            <Button fx:id="SucKhoeB" alignment="TOP_CENTER" layoutX="133.0" layoutY="97.0" mnemonicParsing="false" onAction="#SucKhoeC" prefHeight="85.0" prefWidth="90.0" text="Chăm sóc&#10;sức khỏe&#10;" textFill="WHITE" />
+            <Button fx:id="PhuTroB" alignment="TOP_CENTER" layoutX="133.0" layoutY="385.0" mnemonicParsing="false" onAction="#PhuTroC" prefHeight="85.0" prefWidth="90.0" text="SX phụ trợ" textFill="WHITE" />
+            <Button fx:id="VatlLieuXayDungB" alignment="TOP_CENTER" layoutX="133.0" layoutY="288.0" mnemonicParsing="false" onAction="#VatLieuXayDungC" prefHeight="85.0" prefWidth="90.0" text=" Vật liệu&#10;xây dựng" textFill="WHITE" />
+            <Button fx:id="GiaDungB" alignment="TOP_CENTER" layoutX="133.0" layoutY="193.0" mnemonicParsing="false" onAction="#GiaDungC" prefHeight="85.0" prefWidth="90.0" text="SX hàng gia&#10;     dụng" textFill="WHITE" />
+            <Button fx:id="KhaiKhoangB" alignment="TOP_CENTER" layoutX="271.0" layoutY="97.0" mnemonicParsing="false" onAction="#KhaiKhoangC" prefHeight="85.0" prefWidth="90.0" text="Khai khoáng" textFill="WHITE" />
+            <Button fx:id="NganHangB" alignment="TOP_CENTER" layoutX="407.0" layoutY="97.0" mnemonicParsing="false" onAction="#NganHangC" prefHeight="85.0" prefWidth="90.0" text="Ngân hàng" textFill="WHITE" />
+            <Button fx:id="NLNb" alignment="TOP_CENTER" layoutX="541.0" layoutY="97.0" mnemonicParsing="false" onAction="#NLNc" prefHeight="85.0" prefWidth="90.0" text="Nông&#10;Lâm&#10;Ngư&#10;" textFill="WHITE" />
+            <Button fx:id="CaoSuB" alignment="TOP_CENTER" layoutX="271.0" layoutY="193.0" mnemonicParsing="false" onAction="#CaoSuC" prefHeight="85.0" prefWidth="90.0" text="Sản phẩm&#10;  cao su" textFill="WHITE" />
+            <Button fx:id="HoaChatB" alignment="TOP_CENTER" layoutX="407.0" layoutY="193.0" mnemonicParsing="false" onAction="#HoaChatC" prefHeight="85.0" prefWidth="90.0" text="SX nhựa và&#10; hóa chất" textFill="WHITE" />
+            <Button fx:id="ThucPhamB" alignment="TOP_CENTER" layoutX="541.0" layoutY="193.0" mnemonicParsing="false" onAction="#ThucPhamC" prefHeight="85.0" prefWidth="90.0" text="Thực phẩm&#10;  đồ uống" textFill="WHITE" />
+            <Button fx:id="TienIchB" alignment="TOP_CENTER" layoutX="271.0" layoutY="288.0" mnemonicParsing="false" onAction="#TienIchC" prefHeight="85.0" prefWidth="90.0" text="Tiện ích" textFill="WHITE" />
+            <Button fx:id="VanTaiKhoBaiB" alignment="TOP_CENTER" layoutX="407.0" layoutY="288.0" mnemonicParsing="false" onAction="#VanTaiKhoBaiC" prefHeight="85.0" prefWidth="90.0" text="Vận tải&#10;kho bãi&#10;" textFill="WHITE" />
+            <Button fx:id="XayDungB" alignment="TOP_CENTER" layoutX="541.0" layoutY="288.0" mnemonicParsing="false" onAction="#XayDungC" prefHeight="85.0" prefWidth="90.0" text="Xây dựng" textFill="WHITE" />
+            <Button fx:id="THietBiDienB" alignment="TOP_CENTER" layoutX="271.0" layoutY="385.0" mnemonicParsing="false" onAction="#ThietBiDienC" prefHeight="85.0" prefWidth="90.0" text="Thiết bị điện" textFill="WHITE" />
+            <Button fx:id="TuVanHoTroB" alignment="TOP_CENTER" layoutX="407.0" layoutY="385.0" mnemonicParsing="false" onAction="#TuVanHoTroC" prefHeight="85.0" prefWidth="90.0" text="Dịch vụ tư&#10;vấn, hỗ trợ&#10;" textFill="WHITE" />
+            <Button fx:id="TaiChinhKhacB" alignment="TOP_CENTER" layoutX="541.0" layoutY="385.0" mnemonicParsing="false" onAction="#TaiChinhKhacC" prefHeight="85.0" prefWidth="90.0" text="Tài chính&#10;   khác" textFill="WHITE" />
+            <Text fx:id="bh" fill="WHITE" layoutX="133.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="bds" fill="WHITE" layoutX="271.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="ck" fill="WHITE" layoutX="407.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="cntt" fill="WHITE" layoutX="541.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="bl" fill="WHITE" layoutX="3.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="sk" fill="WHITE" layoutX="133.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="kk" fill="WHITE" layoutX="271.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="nh" fill="WHITE" layoutX="407.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="nln" fill="WHITE" layoutX="541.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="mm" fill="WHITE" layoutX="3.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="gd" fill="WHITE" layoutX="133.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="cs" fill="WHITE" layoutX="271.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="hc" fill="WHITE" layoutX="407.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="tp" fill="WHITE" layoutX="541.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="ts" fill="WHITE" layoutX="3.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="vlxd" fill="WHITE" layoutX="133.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="ti" fill="WHITE" layoutX="271.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="vtkb" fill="WHITE" layoutX="407.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="Xd" fill="WHITE" layoutX="541.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="dl" fill="WHITE" layoutX="3.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="pt" fill="WHITE" layoutX="133.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="tbd" fill="WHITE" layoutX="271.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="tvht" fill="WHITE" layoutX="407.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="tckhac" fill="WHITE" layoutX="541.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="bb" fill="WHITE" layoutX="3.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

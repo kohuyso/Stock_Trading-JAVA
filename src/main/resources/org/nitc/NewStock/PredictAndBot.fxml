@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="921.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="org.nitc.NewStock.PredictAndBotController">
+   <content>
+      <AnchorPane prefHeight="1000.0" prefWidth="921.0">
+         <children>
+            <VBox prefHeight="1000.0" prefWidth="273.0" style="-fx-background-color: #3f2863;">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="XING" layoutX="73.0" layoutY="112.0" size="36" />
+                        <Text fill="WHITE" layoutX="102.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Analysis">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <JFXButton id=" #3f2863" fx:id="Home" alignment="BASELINE_LEFT" onAction="#HomeClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Lọc chứng khoán" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="#fbf9f9" glyphName="ARCHIVE" size="15" wrappingWidth="13.300000190734863" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton id=" #3f2863" fx:id="Update" alignment="BASELINE_LEFT" onAction="#UpdateClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Update data" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="DOWN" size="15" text="" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton id=" #3f2863" fx:id="DauTu" alignment="BASELINE_LEFT" onAction="#DauTuClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Đầu tư ảo" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="MONEY" size="15.0" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton id=" #3f2863" fx:id="About" alignment="BASELINE_LEFT" onAction="#AboutClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="About" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets left="50.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="GROUP" size="15.0" />
+                     </graphic>
+                  </JFXButton>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="Time" fill="WHITE" layoutX="24.0" layoutY="124.0" onDragDetected="#Time7" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" textAlignment="CENTER" wrappingWidth="212.94140625">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <AnchorPane layoutX="269.0" layoutY="428.0" prefHeight="87.0" prefWidth="655.0" style="-fx-background-color: #3f2863;">
+               <children>
+                  <Text fill="WHITE" layoutX="206.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trading BOT with RSI" textAlignment="CENTER">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARCHIVE" layoutX="162.0" layoutY="58.0" size="27" text="">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                  </FontAwesomeIconView>
+               </children>
+            </AnchorPane>
+            <Pane layoutX="265.0" layoutY="110.0" prefHeight="98.0" prefWidth="651.0" style="-fx-background-color: #3f2863;">
+               <children>
+                  <Label layoutX="246.0" layoutY="30.0" text="Dự đoán giá với ML" textFill="WHITE">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ARCHIVE" layoutX="196.0" layoutY="59.0" size="27" text="">
+                     <font>
+                        <Font size="1.0" />
+                     </font>
+                  </FontAwesomeIconView>
+               </children>
+            </Pane>
+            <TextField fx:id="aa" layoutX="325.0" layoutY="306.0" prefHeight="36.0" prefWidth="85.0" />
+            <TextField layoutX="696.0" layoutY="306.0" prefHeight="36.0" prefWidth="151.0" />
+            <TextField layoutX="473.0" layoutY="306.0" prefHeight="36.0" prefWidth="169.0" />
+            <Line endX="192.0" endY="200.0" layoutX="280.0" layoutY="123.0" startX="131.33331298828125" startY="200.0" />
+            <Line endX="414.33331298828125" endY="199.0" layoutX="281.0" layoutY="125.0" startX="362.33331298828125" startY="199.0" />
+            <Text layoutX="359.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã" />
+            <Text layoutX="544.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày" />
+            <Text layoutX="732.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giá dự đoán" />
+            <Text fx:id="PreNgay" layoutX="491.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="66.13671875" />
+            <Text fx:id="GiaDD_TEXT" layoutX="705.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="66.13671875" />
+            <Button fx:id="PreB" layoutX="517.0" layoutY="376.0" mnemonicParsing="false" onAction="#PreC" prefHeight="29.0" prefWidth="147.0" style="-fx-background-color: #3f2863;" text="Predict" textFill="WHITE" />
+            <Button fx:id="RunBotB" layoutX="523.0" layoutY="537.0" mnemonicParsing="false" onAction="#RunBOTC" prefHeight="29.0" prefWidth="147.0" style="-fx-background-color: #3f2863;" text="Run BOT" textFill="WHITE" />
+            <AnchorPane layoutX="273.0" layoutY="601.0" prefHeight="386.0" prefWidth="306.0">
+               <children>
+                  <Text fx:id="SoCoin" layoutX="40.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="start" layoutX="40.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="now" layoutX="40.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lai" layoutX="40.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="157.00006103515625" layoutX="140.0" startX="-139.66668701171875" />
+                  <Line endX="99.00006103515625" endY="6.333343505859375" layoutX="206.0" layoutY="403.0" startX="-206.00003051757812" startY="7.66668701171875" />
+               </children>
+            </AnchorPane>
+            <TableView fx:id="CoTucTable" layoutX="570.0" layoutY="601.0" prefHeight="384.0" prefWidth="335.0">
+               <columns>
+                  <TableColumn fx:id="Lenh_BOT" prefWidth="90.6666259765625" text="Lệnh" />
+                  <TableColumn fx:id="Price_BOT" minWidth="8.0" prefWidth="148.00006103515625" text="Giá" />
+                  <TableColumn fx:id="KhoiLuongBot" prefWidth="95.3333740234375" text="Khối lượng" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

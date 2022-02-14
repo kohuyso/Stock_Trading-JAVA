@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nitc.NewStock.LoginController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="921.0" style="-fx-background-color: #3824b4;">
+         <children>
+            <AnchorPane layoutY="-7.0" prefHeight="628.0" prefWidth="430.0" style="-fx-background-color: #3824b4;">
+               <children>
+                  <TextField fx:id="username" layoutX="95.0" layoutY="228.0" prefHeight="33.0" prefWidth="237.0" promptText="username" />
+                  <TextField fx:id="password" layoutX="97.0" layoutY="297.0" prefHeight="33.0" prefWidth="237.0" promptText="password" />
+                  <Label layoutX="311.0" layoutY="581.0" text="NITC GEN 1" textFill="WHITE">
+                     <font>
+                        <Font size="9.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="192.0" layoutY="94.0" text="Sing In" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="49.0" fitWidth="47.0" layoutX="199.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@239874796_346093113957392_7775489486680685489_n.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="LoginButton" blendMode="ADD" layoutX="157.0" layoutY="404.0" mnemonicParsing="false" onAction="#LoginClick" prefHeight="25.0" prefWidth="118.0" text="Login" textFill="#3824b4" />
+                  <Button fx:id="AboutButton" layoutX="36.0" layoutY="579.0" mnemonicParsing="false" onAction="#AboutClick" prefHeight="17.0" prefWidth="83.0" text="About">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </Button>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="66.0" layoutY="251.0" size="18" wrappingWidth="12.0" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="KEY" layoutX="63.0" layoutY="320.0" size="18" />
+                  <FontAwesomeIconView fill="WHITE" glyphName="GROUP" layoutX="144.0" layoutY="120.0" size="24">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </FontAwesomeIconView>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="640.0" fitWidth="485.0" layoutX="436.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202022-01-12%20085836.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

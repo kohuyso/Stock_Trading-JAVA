@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.nitc.NewStock.HomeController">
+   <children>
+      <VBox prefHeight="625.0" prefWidth="273.0" style="-fx-background-color: #3f2863;">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="XING" layoutX="73.0" layoutY="112.0" size="36" text="" />
+                  <Text fill="WHITE" layoutX="102.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Analysis">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <JFXButton id=" #3f2863" fx:id="Home" alignment="BASELINE_LEFT" onAction="#HomeClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Lọc chứng khoán" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <graphic>
+                  <FontAwesomeIconView fill="#fbf9f9" glyphName="ARCHIVE" size="15" wrappingWidth="13.300000190734863" />
+               </graphic>
+            </JFXButton>
+            <JFXButton id=" #3f2863" fx:id="Update" alignment="BASELINE_LEFT" onAction="#UpdateClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Update data" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="DOWN" size="15" text="" />
+               </graphic>
+            </JFXButton>
+            <JFXButton id=" #3f2863" fx:id="DauTu" alignment="BASELINE_LEFT" onAction="#DauTuClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="Đầu tư ảo" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="MONEY" size="15.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton id=" #3f2863" fx:id="About" alignment="BASELINE_LEFT" onAction="#AboutClick" prefHeight="40.0" prefWidth="273.0" style="-fx-background-color: #3f2863;" styleClass="#3f2863" text="About" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets left="50.0" />
+               </opaqueInsets>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="GROUP" size="15.0" />
+               </graphic>
+            </JFXButton>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Text fx:id="Time" fill="WHITE" layoutX="30.0" layoutY="127.0" onDragDetected="#Time7" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" textAlignment="CENTER" wrappingWidth="212.94140625">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane layoutX="272.0" layoutY="55.0" prefHeight="94.0" prefWidth="651.0" style="-fx-background-color: #3f2863;">
+         <children>
+            <Label layoutX="260.0" layoutY="29.0" text="Lọc theo cổ phiếu" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="ARCHIVE" layoutX="211.0" layoutY="59.0" size="27" text="">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </FontAwesomeIconView>
+         </children>
+      </Pane>
+      <Button fx:id="SearchB" layoutX="845.0" layoutY="167.0" mnemonicParsing="false" onAction="#SearchClick" style="-fx-background-color: #3f2863;" text="Search" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" />
+         </graphic>
+      </Button>
+      <TextField fx:id="SearchText" layoutX="677.0" layoutY="167.0" onAction="#SearchType" prefHeight="25.0" prefWidth="168.0" />
+      <JFXButton fx:id="LocNGanh" layoutX="271.0" layoutY="215.0" onAction="#LocNganhClick" prefHeight="61.0" prefWidth="651.0" style="-fx-background-color: #3f2863;" text="Lọc theo ngành nghề" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="LocRSI" layoutX="272.0" layoutY="275.0" onAction="#LockRsiClick" prefHeight="61.0" prefWidth="651.0" text="Lọc theo RSI">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="DongTien" layoutX="271.0" layoutY="336.0" onAction="#DongTienClick" prefHeight="61.0" prefWidth="651.0" style="-fx-background-color: #3f2863;" text="Lọc theo dòng tiền" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="DinhGia" layoutX="271.0" layoutY="397.0" onAction="#DinhGiaClick" prefHeight="61.0" prefWidth="651.0" text="Đinh giá bằng công thức">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Penny" layoutX="272.0" layoutY="458.0" onAction="#PennyClick" prefHeight="61.0" prefWidth="651.0" style="-fx-background-color: #3f2863;" text="List of penny" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="CoTuc" layoutX="272.0" layoutY="519.0" onAction="#CoTucClick" prefHeight="61.0" prefWidth="651.0" text="Trading_BOT and Dự đoán giá">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
